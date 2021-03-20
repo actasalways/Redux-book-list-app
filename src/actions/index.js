@@ -12,6 +12,13 @@ const addBook = ({isbn, title, subtitle, description, author, pages}) =>{
   }
 }
 
+const selectBook = (book) =>{
+  return{
+    type: 'SELECT_BOOK',
+    payload: book 
+  }
+}
+
 // kitap silme
 const deleteBook = (book) =>{
   return{
@@ -31,4 +38,4 @@ const deselectBook = () =>{
 
 
 
-export { addBook, deleteBook, deselectBook} 
+export { addBook, selectBook, deleteBook, deselectBook} 
